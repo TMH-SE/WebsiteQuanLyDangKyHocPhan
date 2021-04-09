@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../css/style.sv.xd.css" rel="stylesheet" />
+    <link href="../css/responsive.sv.css" rel="stylesheet" />
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dkhp.js"></script>
+
+    <title>Đăng ký học phần</title>
+</head>
+
+<body>
+    <div id="page" class="container-fluid">
+        <!--begin header-->
+        <header class="col-lg-12 col-md-12">
+            <div class="header-top">
+                <div class="container clearfix">
+                    <div id="date" class="float-lg-left float-md-left">Loading...</div>
+                    <script type="text/javascript">
+                        function displayDate() {
+                            var d = new Date();
+                            var day = d.getDay();
+                            var date = d.getDate();
+                            var month = d.getMonth();
+                            var year = d.getFullYear();
+                            var days = new Array("Chủ nhật", "Thứ hai", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7");
+                            var months = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12");
+                            document.getElementById("date").innerHTML = days[day] + ", Ngày " + date + "/" + months[month] + "/" + year;
+                        }
+                        displayDate();
+                    </script>
+                    <div id="connects" class="float-lg-right float-md-right">
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook-icon.png" alt="facebook" /></a></li>
+                            <li><a href="https://twitter.com/" target="_blank"><img src="../images/twitter-icon.png" alt="twiter" /></a></li>
+                            <li><a href="https://plus.google.com/" target="_blank"><img src="../images/google-icon.png" alt="google+" /></a></li>
+                            <li><a href="https://www.linkedin.com/" target="_blank"><img src="../images/linkedin-icon.png" alt="linkedin" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-logo">
+                <div class="clearfix container">
+                    <div class="col-md-3 float-md-left">
+                        <a href="index.html">
+                            <img src="../images/logo.png" width="250px" />
+                        </a>
+                    </div>
+                    <div class="header-title col-md-9 float-md-right">
+                        <div class="right-title">ĐẠI HỌC TỔNG HỢP MIỀN NAM</div>
+                        <div class="sub-title">đăng ký học phần</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+                <!-- The slideshow -->
+                <div class="container">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/image-header1.png" alt="img1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/image-header2.jpg" alt="img2" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/image-header3.jpg" alt="img3" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/image-header4.png" alt="img4" />
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+
+        </header>
+        <!--end header-->
+        <!--begin nav-->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="../images/logo-menu.png" alt="SGU" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color:#fff; font-weight:900;">&equiv;</span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="sinhvien.html">Trang chủ<span></span><span></span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="xemdiem.html">Xem kết quả học tập<span></span><span></span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="dkhp.html">Đăng kí học phần<span></span><span></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lienhe.html">Liên hệ<span></span><span></span><span></span><span></span></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0" method="get" action="https://www.google.com/search" target="_blank">
+                        <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--end nav-->
+
+        <div class="container main-content">
+            <!--article-->
+            <!--end article-->
+            <!--section-->
+            <section class="section-info">
+                <h4 class="title-info">Đăng Ký Học Phần</h4>
+                <div class="row">
+                    <div class="dkhpdiv col-md-6">
+                        <table id="tblInfo" class=" table table-striped table-hover table-responsive" border="1">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <td class="semester" colspan="4" align="center">
+                                        Các môn đăng ký trong học kỳ</th>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th width="100%">Tên môn học</th>
+                                    <th>Mã lớp</th>
+                                    <th>Tín chỉ</th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="radio" name="rad" id="1" value="nhapmonlaptrinh" /></td>
+                                    <td>Nhập môn lập trình</td>
+                                    <td>210154005</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="rad" id="2" value="nhapmontinhoc" /></td>
+                                    <td>Nhập môn tin học</td>
+                                    <td>210154006</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="rad" id="3" value="toana1" /></td>
+                                    <td>Toán A1</td>
+                                    <td>210154007</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="rad" id="4" value="cautrucroirac" /></td>
+                                    <td>Cấu trúc rời rạc</td>
+                                    <td>210154008</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="rad" id="5" value="phuongphaptinh" /></td>
+                                    <td>Phương pháp tính</td>
+                                    <td>210154009</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="dkhpdiv col-md-6">
+                        <table id="tblInfoRegis" class=" table table-striped table-hover table-responsive" border="1">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <td class="semester" colspan="7" align="center">
+                                        Thông Tin Môn Học</th>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th width="100%">Tên môn học</th>
+                                    <th>Mã lớp</th>
+                                    <th>Tín chỉ</th>
+                                    <th>Giảng Viên</th>
+                                    <th>Lịch Học</th>
+                                    <th>Phòng Học</th>
+                                </tr>
+                            </thead>
+
+                        </table>
+                        <button type="button" id="regisSubject" class="btn btn-primary btn-lg">Đăng Ký</button>
+                    </div>
+                    <div class="dkhpdiv col-md-12">
+                        <table id="tblregisted" class=" table table-striped table-hover table-responsive-sm" border="1">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <td class="semester" colspan="7" align="center" style="text-transform:capitalize;">
+                                        Môn học đã đăng kí
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>Tên môn học</th>
+                                    <th>Mã lớp</th>
+                                    <th>Tín chỉ</th>
+                                    <th>Giảng Viên</th>
+                                    <th>Lịch Học</th>
+                                    <th>Phòng Học</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+
+
+                        </table>
+                        <button type="button" id="cancelSubject" class="btn btn-primary btn-lg">Hủy đăng ký</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </section>
+        <!--end section-->
+    </div>
+
+    <!--footer-->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="footer-top">
+                <h4 class="title-footer">Đại học tổng hợp miền nam</h4>
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>Địa chỉ : Số 01 Nguyễn Huệ, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>Điện thoại: 028-1234567</span>
+                </div>
+                <div>
+                    <i class="fa fa-fax"></i>
+                    <span>Fax: 028-7654321</span>
+                </div>
+                <div class="footer-contact">
+                    <span style="float: left">Contact us:</span>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook-footer.png" alt="facebook" /></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><img src="../images/twitter-footer.png" alt="twiter" /></a></li>
+                        <li><a href="https://plus.google.com/" target="_blank"><img src="../images/google-footer.png" alt="google+" /></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank"><img src="../images/linkedin-footer.png" alt="linkedin" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom" style="text-align:center">
+                <strong style="margin: 0; width:inherit;">&copy; Copyright 2018 by SGU. All Rights Reserved</strong><br />
+                <em>Dẫn đầu chất lượng đào tạo</em>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+    </div>
+</body>
+</html>
